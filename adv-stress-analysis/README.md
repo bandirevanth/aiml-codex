@@ -4,7 +4,6 @@ This Web app will help you to detects a person's stress level by analysing the v
 
 ### Idea: 
 Building an application that can detect the presence of a mental stress or the possible causes of mental ailments due to stress by indicating the highly relevant factors. 
-```
 
 ### Note:
 **Incase the application demo doesn't start real quick, you can get an idea about how it looks like from the screenshots**
@@ -67,4 +66,5 @@ These instructions will help you get a copy of the project up and running on you
      ```bash
     python -m streamlit run app.py 
     ```
+
   
