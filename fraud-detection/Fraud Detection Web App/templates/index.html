@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Predictor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <h1 class="text-center">Fraud Detection AI</h1>
+        <br>
+
+        <div>
+            <h2>Guide:</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Parameter</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>type_code</td>
+                        <td>The method of transaction. Enter the numbers according to the type (1 = CASH-IN, 2 =
+                            CASH-OUT, 3 = DEBIT, 4 = PAYMENT, 5 = TRANSFER)</td>
+                    </tr>
+                    <tr>
+                        <td>amount</td>
+                        <td>The transaction amount</td>
+                    </tr>
+                    <tr>
+                        <td>oldbalanceDest</td>
+                        <td>initial balance (before transaction) of person receiving the payment</td>
+                    </tr>
+                    <tr>
+                        <td>newbalanceDest</td>
+                        <td>new balance (after transaction) of person receiving the payment</td>
+                    </tr>
+                    <tr>
+                        <td>step</td>
+                        <td>unit of time which in this case is 1 hour</td>
+                    </tr>
+                    <tr>
+                        <td>oldbalanceOrg</td>
+                        <td>initial balance (before transaction) of the person sending the payment</td>
+                    </tr>
+                    <tr>
+                        <td>newbalanceOrig</td>
+                        <td>new balance (after transaction) of the person sending the payment</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <h3>Enter the details:</h3>
+        <br>
+
+        <form class="form-horizontal" action="{{ url_for('predict')}}" method="post">
+            <input type="text" class="form-control" name='type_code' placeholder="type_code" required="required" />
+            <input type="text" class="form-control" name="amount" placeholder="amount" required="required" />
+            <input type="text" class="form-control" name="oldbalanceDest" placeholder="oldbalanceDest"
+                required="required" />
+            <input type="text" class="form-control" name="newbalanceDest" placeholder="newbalanceDest"
+                required="required" />
+            <input type="text" class="form-control" name="step" placeholder="step" required="required" />
+            <input type="text" class="form-control" name="oldbalanceOrg" placeholder="oldbalanceOrg"
+                required="required" />
+            <input type="text" class="form-control" name="newbalanceOrig" placeholder="newbalanceOrig"
+                required="required" />
+
+            <br>
+            <br>
+            <button type="submit" class="btn btn-success">Predict</button>
+        </form>
+        <br>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                {{ prediction_text }}
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+</html>
