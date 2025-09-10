@@ -1,0 +1,4 @@
+streamlit>=1.25.0
+serpapi>=1.0.0
+agno>=0.1.0
+python-dotenv>=1.0.0
