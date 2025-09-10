@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+build/
+pip-wheel-metadata/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# Environment / API Keys
+.env
+.env.local
+.env.*.local
+*.env
+.env.example
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editors
+.vscode/
+*.sw?
