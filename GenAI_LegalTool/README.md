@@ -16,8 +16,8 @@ This system processes **legal documents (PDFs)** using advanced AI models and kn
 ### **1️⃣ Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/legal-ai-agents.git
-cd legal-ai-agents
+git clone https://github.com/bandirevanth/aiml-codex/tree/main/GenAI_LegalTool
+cd GenAI_LegalTool
 
 pip install -r requirements.txt
 
