@@ -47,8 +47,8 @@ Built with **Streamlit**, **Agno Agents**, and **Google Gemini**.
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/ai-health-fitness-plan.git
-cd ai-health-fitness-plan
+git clone https://github.com/bandirevanth/aiml-codex/tree/main/GenAI_Health_Fitness_Planner
+cd GenAI_Health_Fitness_Planner
 ```
 
 2️⃣ Create a Virtual Environment (recommended)
