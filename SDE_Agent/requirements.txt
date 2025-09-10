@@ -1,0 +1,6 @@
+streamlit>=1.24.1
+pydantic>=1.10.9
+python-dotenv>=1.0.1
+cryptography>=41.0.0
+PyGithub>=2.1.1
+agents-sdk>=0.1.0  # Replace with actual package name for your Agent library
