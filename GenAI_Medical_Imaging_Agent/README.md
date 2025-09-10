@@ -1,6 +1,6 @@
 # 🩺 Medical Image Analysis Tool 🔬
 
-An AI-powered **medical imaging assistant** that analyzes X-rays, MRIs, CT scans, and ultrasound images.  
+An AI-powered **medical imaging assistant** that analyses X-rays, MRIs, CT scans, and ultrasound images.  
 It provides structured findings, diagnostic assessments, patient-friendly explanations, and references to medical literature.
 
 ---
@@ -16,6 +16,8 @@ It provides structured findings, diagnostic assessments, patient-friendly explan
 - ⚠️ Built-in medical disclaimer
 
 ---
+
+
 
 ## 🚀 Setup & Installation
 
@@ -42,3 +44,12 @@ Create a .env file in the project root:
 
 ### 5. Run App
 ```streamlit run app.py```
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is intended for educational and research purposes only.  
+It is not a substitute for professional medical advice, diagnosis, or treatment.  
+Always consult a qualified healthcare provider for medical concerns.  
+I assume no responsibility for any outcomes resulting from the use of this tool.
