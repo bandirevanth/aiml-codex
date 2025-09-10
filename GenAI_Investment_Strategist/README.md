@@ -19,8 +19,8 @@ It fetches stock market data, analyzes company profiles, summarizes recent news,
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/ai-investment-strategist.git
-cd ai-investment-strategist
+git clone https://github.com/bandirevanth/aiml-codex/tree/main/GenAI_Investment_Strategist
+cd GenAI_Investment_Strategist
 ```
 
 ### 2. Create and activate a virtual environment
