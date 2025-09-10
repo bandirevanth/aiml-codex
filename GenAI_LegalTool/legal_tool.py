@@ -54,7 +54,7 @@ with st.sidebar:
 
     # Set API Key
     if api_key:
-        os.environ["GOOGLE_API_KEY"] = api_key # "AIzaSyAQiCbp5x7y1vhG22IabYG5XrXX50CiMQo"
+        os.environ["GOOGLE_API_KEY"] = api_key
         st.success("API key entered successfully!")
 
     # Proceed with using the API key
