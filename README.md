@@ -33,7 +33,7 @@ Here’s what you’ll find inside this codex:
 ---
 
 ## 🛠️ Tech Stack
-Some of the tools & frameworks you’ll see across projects:  
+Some of the tools & frameworks you’ll (soon) see across projects:  
 
 - **Languages**: Python 
 - **ML/AI**: PyTorch, Transformers (Hugging Face), scikit-learn, NumPy, Pandas  
@@ -53,12 +53,10 @@ cd ai-ml-codex/project-folder
 ## 📜 Roadmap
 - Expand Codex with 10+ production-ready AI apps
 - Add detailed tutorials & blog posts
-- Build an interactive portfolio site showcasing projects
-- Release a curated AI Full-Stack Engineer Roadmap (2028-ready)
-
-## 🤝 Contributions
-This codex is personal yet open — feel free to fork, star ⭐, or open issues for ideas, feedback, or improvements.
 
 ## ⚠️ Disclaimer
 These projects are for learning, research, and demonstration purposes.
 They are not intended to provide financial, medical, or legal advice. Use responsibly.
+
+## 🤝 Contributions
+This codex is personal yet open — feel free to fork, star ⭐, or open issues for ideas, feedback, or improvements.
