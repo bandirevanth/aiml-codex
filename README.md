@@ -4,7 +4,7 @@
 ---
 
 ## 🌟 Vision  
-This repository serves as my **living codex of AI/ML explorations, experiments, and full-fledged projects **.  
+This repository serves as my **living codex of AI/ML explorations, experiments, and full-fledged projects**.  
 From research prototypes to production-grade systems, the goal is simple:  
 to **push the boundaries of what’s possible with AI**, learn relentlessly, and share that journey.  
 
