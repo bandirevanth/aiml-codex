@@ -37,7 +37,7 @@ app.add_middleware(
 # Configuration
 HEDRA_API_BASE = "https://api.hedra.com/web-app/public"
 HEDRA_API_KEY = os.getenv("HEDRA_API_KEY")
-ELEVENLABS_API_KEY = "sk_ef8d62e320691f36097e9bf922c25c572fd20c1d0c853dc2"
+ELEVENLABS_API_KEY = ""
 
 if not HEDRA_API_KEY:
     logger.error("HEDRA_API_KEY environment variable is not set")
