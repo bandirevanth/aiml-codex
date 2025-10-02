@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lk-va-bar-width: 72px;
+  --lk-control-bar-height: unset;
+  --lk-bg: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #f3e8ff 100%);
+  --companion-primary: #ec4899;
+  --companion-secondary: #f43f5e;
+  --companion-accent: #a855f7;
+}
+
+/* Custom styling for the romantic AI companion theme */
+.agent-visualizer-romantic > .lk-audio-bar {
+  width: 8px;
+  margin: 0 2px;
+  background: linear-gradient(to top, #ec4899, #f43f5e, #a855f7);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s ease;
+}
+
+.agent-visualizer-romantic > .lk-audio-bar:hover {
+  transform: scaleY(1.1);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);
+}
+
+/* Improved voice visualizer styling */
+.agent-visualizer-improved {
+  background: transparent !important;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.agent-visualizer-improved > .lk-audio-bar {
+  width: 6px;
+  margin: 0 3px;
+  background: linear-gradient(to top, #ec4899, #f43f5e, #db2777);
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(236, 72, 153, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: bottom;
+}
+
+.agent-visualizer-improved > .lk-audio-bar:nth-child(even) {
+  background: linear-gradient(to top, #f43f5e, #ec4899, #a855f7);
+  animation-delay: 0.1s;
+}
+
+.agent-visualizer-improved > .lk-audio-bar:nth-child(3n) {
+  background: linear-gradient(to top, #a855f7, #ec4899, #f43f5e);
+  animation-delay: 0.2s;
+}
+
+.agent-visualizer-improved > .lk-audio-bar:hover {
+  transform: scaleY(1.2) scaleX(1.1);
+  box-shadow: 0 4px 20px rgba(236, 72, 153, 0.6);
+}
+
+.lk-agent-control-bar {
+  @apply border-t-0 p-0 h-min mr-4 bg-gradient-to-r from-pink-100 to-rose-100 rounded-xl border border-pink-200;
+}
+
+.lk-disconnect-button {
+  @apply h-[44px] hover:bg-rose-600 hover:text-white bg-rose-500 border-rose-400 text-white rounded-full px-4 transition-all duration-200 shadow-lg;
+}
+
+/* Voice assistant control styling */
+.lk-voice-assistant-control-bar {
+  @apply bg-gradient-to-r from-pink-100 to-rose-100 rounded-xl border border-pink-200 p-2;
+}
+
+.lk-voice-assistant-control-bar button {
+  @apply bg-white hover:bg-pink-50 text-pink-600 hover:text-pink-700 rounded-lg border border-pink-200 transition-all duration-200 shadow-sm;
+}
+
+.lk-voice-assistant-control-bar button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+}
+
+/* Transcription styling */
+.lk-transcription-item {
+  @apply bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-100 rounded-2xl p-4 mb-3 shadow-sm;
+}
+
+.lk-transcription-item[data-role="assistant"] {
+  @apply bg-gradient-to-r from-purple-50 to-pink-50 border-purple-100;
+}
+
+.lk-transcription-item[data-role="user"] {
+  @apply bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-100;
+}
+
+/* Custom scrollbar for transcriptions */
+.lk-transcription-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lk-transcription-container::-webkit-scrollbar-track {
+  background: rgba(236, 72, 153, 0.1);
+  border-radius: 3px;
+}
+
+.lk-transcription-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ec4899, #f43f5e);
+  border-radius: 3px;
+}
+
+.lk-transcription-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #db2777, #e11d48);
+}
+
+/* Animation for connection state */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.companion-heartbeat {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+/* Gradient text utilities */
+.gradient-text-romantic {
+  background: linear-gradient(135deg, #ec4899, #f43f5e, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Floating hearts animation */
+@keyframes float-hearts {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+.floating-heart {
+  animation: float-hearts 3s ease-in-out infinite;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Romantic glow effect */
+.romantic-glow {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.3), 0 0 40px rgba(244, 63, 94, 0.2);
+}
+
+/* Custom button hover effects */
+.btn-romantic {
+  @apply bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-romantic:hover {
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4);
+}
+
+/* Loading animation for AI responses */
+@keyframes thinking {
+  0%, 20% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.thinking-dots span {
+  animation: thinking 1.4s ease-in-out infinite;
+}
+
+.thinking-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.thinking-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}

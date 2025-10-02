@@ -1,0 +1,43 @@
+{
+    "name": "@hedra/create-ai-avatar-girlfriend",
+    "version": "1.0.0",
+    "description": "Scaffolding for a LiveKit + Hedra AI Avatar Girlfriend app with a Python backend and React frontend",
+    "bin": {
+        "create-ai-avatar-girlfriend": "create.js"
+    },
+    "files": [
+        "create.js",
+        "template"
+    ],
+    "keywords": [
+        "hedra",
+        "livekit",
+        "avatar",
+        "girlfriend",
+        "ai",
+        "scaffold",
+        "create-app",
+        "video-agent",
+        "voice-assistant"
+    ],
+    "author": "Rohit Ghumare",
+    "scripts": {
+        "build": "npx esbuild create.js --bundle --platform=node --outfile=dist/create.cjs",
+        "deploy": "npm publish"
+    },
+    "dependencies": {
+        "child_process": "^1.0.2",
+        "fs-extra": "^11.3.0",
+        "path": "^0.12.7",
+        "prompts": "^2.4.2"
+    },
+    "engines": {
+        "node": ">=16"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "esbuild": "^0.25.5"
+    }
+}

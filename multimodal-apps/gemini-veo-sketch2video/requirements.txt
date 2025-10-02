@@ -1,0 +1,7 @@
+Flask==2.3.3
+google-genai>=0.2.0
+google-cloud-storage==2.17.0
+python-dotenv==1.0.1
+Pillow==10.4.0
+requests==2.31.0
+gunicorn==21.2.0 

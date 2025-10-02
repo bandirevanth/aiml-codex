@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the contextual video RAG */
+.contextual-rag {
+  @apply bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg p-4;
+}
+
+.context-window {
+  @apply bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-xl p-6 border border-gray-700 mb-4;
+}
+
+.context-chunk {
+  @apply flex items-start justify-between p-4 bg-gray-700 bg-opacity-50 rounded-lg mb-3 transition-colors duration-200;
+}
+
+.context-chunk:hover {
+  @apply bg-gray-600 bg-opacity-50;
+}
+
+.context-chunk.relevant {
+  @apply border-l-4 border-indigo-500 bg-indigo-900 bg-opacity-30;
+}
+
+.context-chunk.highly-relevant {
+  @apply border-l-4 border-purple-500 bg-purple-900 bg-opacity-30;
+}
+
+.contextual-interface {
+  @apply bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-xl p-6 border border-gray-700;
+}
+
+.compression-result {
+  @apply bg-indigo-900 bg-opacity-30 border-l-4 border-indigo-500 p-4 rounded-r-lg mb-4;
+}
+
+.context-score {
+  @apply inline-block px-3 py-1 bg-purple-600 text-white text-sm rounded-full;
+}
+
+.contextual-stats {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-4 mb-6;
+}
+
+.stat-card {
+  @apply bg-indigo-900 bg-opacity-30 p-4 rounded-lg border border-indigo-600;
+}
+
+.stat-value {
+  @apply text-2xl font-bold text-indigo-300;
+}
+
+.stat-label {
+  @apply text-sm text-gray-400;
+}
+
+/* Context visualization */
+.context-graph {
+  @apply bg-gray-800 bg-opacity-30 rounded-lg p-4 border border-gray-600;
+}
+
+.context-node {
+  @apply w-4 h-4 rounded-full bg-indigo-500 absolute;
+}
+
+.context-node.query {
+  @apply bg-yellow-500;
+}
+
+.context-node.relevant {
+  @apply bg-purple-500;
+}
+
+.context-connection {
+  @apply absolute border-t border-gray-500;
+}
+
+.context-connection.strong {
+  @apply border-purple-400 border-t-2;
+}
+
+/* Compression techniques */
+.compression-method {
+  @apply bg-purple-900 bg-opacity-30 p-4 rounded-lg border border-purple-600 mb-3;
+}
+
+.compression-ratio {
+  @apply text-sm text-purple-300 font-medium;
+}
+
+/* Scrollbar styling for contextual content */
+.contextual-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.contextual-content::-webkit-scrollbar-track {
+  background: #374151;
+  border-radius: 3px;
+}
+
+.contextual-content::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 3px;
+}
+
+.contextual-content::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

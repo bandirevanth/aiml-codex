@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch to Video Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 Sketch to Video Generator</h1>
+            <p>Draw a sketch and AI will turn it into a cinematic video</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <h3>Upload or Draw Your Sketch</h3>
+                    <p>Click to upload an image or use the drawing canvas below</p>
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <button type="button" class="upload-button" onclick="document.getElementById('imageInput').click()">
+                        Choose Image
+                    </button>
+                </div>
+                
+                <!-- Preview Section -->
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <img id="imagePreview" class="image-preview" alt="Preview">
+                </div>
+            </div>
+
+            <!-- Drawing Canvas Section -->
+            <div class="canvas-section">
+                <h3>Or Draw Your Sketch</h3>
+                <div class="canvas-container">
+                    <canvas id="sketchCanvas" width="512" height="400"></canvas>
+                </div>
+                
+                <div class="canvas-controls">
+                    <button id="drawBtn" class="tool-btn active">✏️ Draw</button>
+                    <button id="eraseBtn" class="tool-btn">🧽 Erase</button>
+                    
+                    <div class="color-control">
+                        <label>Color:</label>
+                        <input type="color" id="colorPicker" value="#000000">
+                    </div>
+                    
+                    <div class="thickness-control">
+                        <label>Size:</label>
+                        <input type="range" id="thicknessSlider" min="1" max="20" value="3">
+                        <span id="thicknessValue">3</span>
+                    </div>
+                    
+                    <button id="clearCanvasBtn" class="clear-btn">🗑️ Clear</button>
+                </div>
+            </div>
+
+            <!-- Prompt Section -->
+            <div class="prompt-section">
+                <label for="promptInput">Additional Description (Optional)</label>
+                <textarea id="promptInput" placeholder="Describe what you want to emphasize about your sketch..."></textarea>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-section">
+                <button id="generateButton" class="generate-button">
+                    <span class="btn-text">🎬 Generate Video</span>
+                    <span class="btn-loading" style="display: none;">⏳ Generating...</span>
+                </button>
+            </div>
+
+            <!-- Loading Animation -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>AI is generating your video...</p>
+            </div>
+
+            <!-- Results Section -->
+            <div id="resultSection" class="result-section"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

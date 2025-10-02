@@ -1,0 +1,5 @@
+
+{
+  "name": "Gemini Video Analyzer",
+  "description": "An application to analyze video content using Gemini API, presenting insights through text, icons, and charts. Users can upload videos and select an analysis type (e.g., cooking, exercise, tech) to get relevant information."
+}

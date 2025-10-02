@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the multi-modal chatbot */
+.chat-bubble {
+  @apply rounded-lg p-4 max-w-xs break-words;
+}
+
+.user-bubble {
+  @apply bg-blue-600 text-white ml-auto;
+}
+
+.assistant-bubble {
+  @apply bg-gray-700 text-gray-100 mr-auto;
+}
+
+.loading-dots {
+  @apply inline-flex space-x-1;
+}
+
+.loading-dots div {
+  @apply w-2 h-2 bg-gray-400 rounded-full animate-pulse;
+}
+
+.mode-selector {
+  @apply flex space-x-2 p-1 bg-gray-800 rounded-lg;
+}
+
+.mode-button {
+  @apply px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+}
+
+.mode-button.active {
+  @apply bg-purple-600 text-white;
+}
+
+.mode-button.inactive {
+  @apply text-gray-400 hover:text-gray-200 hover:bg-gray-700;
+}
+
+/* Scrollbar styling */
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #374151;
+  border-radius: 3px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 3px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
