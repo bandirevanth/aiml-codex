@@ -55,7 +55,4 @@ Based on OpenAI Swarm multi-agent pattern with sequential agent collaboration:
 - Context preservation across agents
 - Specialized role-based processing
 - Quality assurance through editorial review
-
-## License
-
-MIT License
+- 
