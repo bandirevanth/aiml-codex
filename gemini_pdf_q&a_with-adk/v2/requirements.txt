@@ -1,0 +1,11 @@
+streamlit
+langchain
+langchain-community
+langchain-core==0.3.70
+langchain-huggingface==0.3.1
+huggingface-hub
+faiss-cpu
+PyPDF2
+langchain-groq
+PyPDF
+sentence-transformers
