@@ -1,0 +1,29 @@
+# Core LLM and RAG
+langchain
+langchain_community
+langchain_groq
+langchain_huggingface
+
+# Embeddings and Transformers
+sentence-transformers
+transformers
+
+# Vector store
+faiss-cpu
+
+# Web Scraping
+requests
+beautifulsoup4
+newspaper3k
+
+# UI
+streamlit
+
+# Environment
+python-dotenv
+
+# PDF/Markdown/Other Parsers if needed later
+unstructured
+PyMuPDF
+
+duckduckgo-search>=0.9
