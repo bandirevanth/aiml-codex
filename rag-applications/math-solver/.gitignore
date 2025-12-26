@@ -1,0 +1,40 @@
+# Build output
+bin/
+obj/
+out/
+build/
+target/
+Debug/
+Release/
+
+# IDE files
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Compiled files
+*.dll
+*.exe
+*.pdb
+*.class
+
+# Dependency directories
+packages/
+node_modules/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*~
