@@ -1,7 +1,7 @@
 streamlit
 langchain
 langchain-community
-langchain-core==0.3.70
+langchain-core==0.3.81
 langchain-huggingface==0.3.1
 huggingface-hub
 faiss-cpu
