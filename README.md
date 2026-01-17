@@ -50,6 +50,13 @@ git clone https://github.com/your-username/ai-ml-codex.git
 cd ai-ml-codex/project-folder
 ```
 
+## ⚠ Note
+
+This repository contains experimental and educational AI/ML projects.  
+Models, results, and metrics may be incomplete, incorrect, unstable, or outdated. (Results may vary due to randomness, hardware differences, dataset versions, or library updates)  
+Use at your own risk. Always validate results independently before real-world use.  
+It must not be used for malicious, deceptive, or unethical applications.
+
 ## 📜 Roadmap
 - Expand Codex with 10+ production-ready AI apps
 - Add detailed tutorials & blog posts
